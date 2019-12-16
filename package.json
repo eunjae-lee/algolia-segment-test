@@ -1,0 +1,15 @@
+{
+  "name": "algolia-segment-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eunjae Lee <karis612@gmail.com> (https://github.com/eunjae-lee)",
+  "license": "MIT",
+  "dependencies": {
+    "algoliasearch": "^3.35.1",
+    "analytics-node": "^3.4.0-beta.1"
+  }
+}
