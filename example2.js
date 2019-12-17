@@ -41,12 +41,12 @@ index.search({ query: "S", clickAnalytics: true }, (err, result) => {
         category: hit.categories[0],
         name: hit.name,
         brand: hit.brand,
-        variant: hit.type,
+        variant: undefined,
         price: hit.price,
         quantity: 1,
         coupon: undefined,
         position: position,
-        url: hit.url,
+        url: undefined,
         image_url: hit.image
       })),
       index: indexName // Extra parameters required by Algolia

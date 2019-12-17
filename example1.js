@@ -5,8 +5,8 @@ const Analytics = require("analytics-node");
 const analytics = new Analytics("tFt32JIMKi1qCNcQvD7uHPSRJ5a50dND");
 
 const algoliasearch = require("algoliasearch");
-const client = algoliasearch("latency", "af044fb0788d6bb15f807e4420592bc5");
-const indexName = "instant_search";
+const client = algoliasearch("B1G2GM9NG0", "aadef574be1f9252bb48d4ea09b5cfe5");
+const indexName = "demo_ecommerce";
 const index = client.initIndex(indexName);
 
 index.search({ query: "S", clickAnalytics: true }, (err, result) => {
@@ -29,12 +29,12 @@ index.search({ query: "S", clickAnalytics: true }, (err, result) => {
         category: hit.categories[0],
         name: hit.name,
         brand: hit.brand,
-        variant: hit.type,
+        variant: undefined,
         price: hit.price,
         quantity: 1,
         coupon: undefined,
         position: position,
-        url: hit.url,
+        url: undefined,
         image_url: hit.image
       })),
       index: indexName // Extra parameters required by Algolia
